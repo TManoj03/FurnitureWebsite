@@ -36,10 +36,10 @@ const Nav = () => {
                     </li>
                 </ul>
                 <ul className='nav__link'>
+                    <li><a className='nav__link__item' href="#about">About us</a></li>
                     <li><a className='nav__link__item' href="#products">Products</a></li>
                     <li><a className='nav__link__item' href="#offers">Offers</a></li>
-                    <li><a className='nav__link__item' href="#About">About us</a></li>
-                    <li><a className='nav__link__item' href="#Contact">Contact us</a></li>
+                    <li><a className='nav__link__item' href="#contact">Contact us</a></li>
                 </ul>
                 {!isMenuOpen?
                     <button className='menu__bar' onClick={toggleMenu}>
@@ -70,10 +70,10 @@ const Nav = () => {
            { isMenuOpen?(
            <div className="mobile__nav">
                 <ul className='nav__mobile__link'>
-                    <li><a className='mobile__link__item' href="#Products">Products</a></li>
+                    <li><a className='mobile__link__item' href="#about">About us</a></li>
+                    <li><a className='mobile__link__item' href="#products">Products</a></li>
                     <li><a className='mobile__link__item' href="#Offers">Offers</a></li>
-                    <li><a className='mobile__link__item' href="#About">About us</a></li>
-                    <li><a className='mobile__link__item' href="#Contact">Contact us</a></li>
+                    <li><a className='mobile__link__item' href="#contact">Contact us</a></li>
                 </ul>
             </div>):(console.log("menu Closed"))
             }
