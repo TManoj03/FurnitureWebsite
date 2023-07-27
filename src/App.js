@@ -5,7 +5,7 @@ import Products from './Components/Products/Products';
 import Footer from './Components/Footer/Footer';
 import Contact from './Components/Contact/Contact';
 import About from './Components/AboutUs/About'
-// import Reviews from './Components/Reviews/Reviews';
+import Reviews from './Components/Reviews/Reviews';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <Hero />
       <About />
       <Products />
-      {/* <Reviews /> */}
+      <Reviews />
       <Contact />
       <Footer />
     </div>

@@ -552,16 +552,98 @@ header{
   width: 20%;
 }
 
-/* Brands */
-.company{
+/* Reviews Section */
+
+
+.borderAnimation__review{
+  position: absolute;
+  left: 45%;
+  border-bottom: 3px solid #cddc39;
+  width: 10%;
+}
+
+.review{
+  margin-top: 1rem;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 20px;
+  cursor: pointer;
+  user-select: none;
+  /* animation: scrollText 10s infinite ; */
+  transition: 2s ease-in;
 }
 
 
+/* @keyframes scrollText {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(-25%);
+  }
+  
+} */
 
+.review__box{
+  width: 400px;
+  height: 300px;
+  background-color: whitesmoke;
+  padding:10px 20px;
+  /* box-shadow: -10px 10px 40px rgba(0, 0, 0, 0.25); */
+  position: relative;
+  border-radius: 8px;
+}
 
+.review__content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.review__img{
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.slider__icon > button{
+  width: 40px;
+  object-fit: contain;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: .7;
+  cursor: pointer;
+  transition: 1s ease-in;
+}
+
+/* .slider__icon > button:hover{
+  opacity: 1;
+  transform: scale(1.1);
+} */
+
+.slider__icon > button:nth-child(1){
+  position: absolute;
+  top: 16rem;
+  left: 0.5rem;
+}
+
+.slider__icon > button:nth-child(2){
+  position: absolute;
+  top: 16rem;
+  left: 22rem;
+}
 
 
 
@@ -630,7 +712,23 @@ header{
   
   .content__description > h2 {
     font-size: 30px;
-    /* text-align: left; */
+  }
+
+  .review__box{
+    width: 250px;
+  }
+
+  .review__img{
+    width: 5rem;
+    height: 5rem;
+  }
+  
+  .slider__icon > button{
+    width: 30px;
+  }
+  
+  .slider__icon > button:nth-child(2){
+    left: 13rem;
   }
 }
 
@@ -670,6 +768,23 @@ header{
   
   .content__description {
     padding: 0 35px;
+  }
+
+  .review__box{
+    width: 320px;
+  }
+
+  .review__img{
+    width: 6rem;
+    height: 6rem;
+  }
+  
+  .slider__icon > button{
+    width: 30px;
+  }
+  
+  .slider__icon > button:nth-child(2){
+    left: 17.5rem;
   }
 
 }
